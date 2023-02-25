@@ -1,0 +1,140 @@
+/* MEDIA QUERIES */
+/* large screens */
+@media only screen and (min-width: 1200px) {
+}
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Styles for tablets */
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+  /* Styles for phones */
+}
+/* tab below */
+@media screen and (max-width: 1199px) {
+
+}
+/* /////////////////// */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap");
+
+:root {
+  --gray: #24394e;
+  --dark: #0c131b;
+  --blue: #2ab7ff;
+  --radius:2.5em;
+}
+/* display */
+@media screen and (max-width: 1199px) {
+ /* tab below */
+  #hidden-tab{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* desktop */
+  #hidden-desktop{
+    display: none;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+   #hidden-mobile{
+    display: none;
+  }
+}
+/* ///// */
+/* positioning */
+.center{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* //////// */
+
+
+/* text */
+.capitalize{
+  text-transform: capitalize;
+}
+.text-center{
+  text-align: center;
+}
+.no-white-space{
+  white-space: nowrap;
+}
+/* /////// */
+
+
+/* flex and grid */
+.flex-imp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*/////////////  */
+
+/* ICONS */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.html5 {
+  color: orangered;
+}
+
+.css3 {
+  color: #4165af;
+  
+}
+
+
+.react {
+  color: #58c5ee;
+}
+
+.js {
+  color: #f7de1f;
+}
+
+
+
+
+
+
+/* ////// */
