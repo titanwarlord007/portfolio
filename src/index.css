@@ -39,8 +39,7 @@ picture,
 video,
 canvas,
 svg {
-  /* display: block; */
-  width: 100%;
+ max-width: 100%;
 }
 
 input,
@@ -73,20 +72,61 @@ h2 {
 }
 h3 {
   font-size: 2.1rem;
+  font-weight: normal;
 }
 h4 {
   font-size: 1.8rem;
   font-weight: normal;
 }
+@media only screen and (max-width: 767px) {
+h1{font-size: 4rem;}
+h2{font-size:3rem ;}
+h3{font-size:1.8rem ;}
+h4{font-size:1.5rem ;}
+p{font-size: 1.2rem;}
+  
+}
+/* NAVIGATION */
+.ham-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .4em;
+  background-color: var(--blue);
+  width: 50px;
+  height: 50px;
+  padding:.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.ham-btn .btn-line {
+  width: 80%;
+  height: 3px;
+  /* margin: 0 0 5px 0; */
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+.ham-btn.close {
+  transform: rotate(360deg);
+}
+.ham-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 4px);
+}
+.ham-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.ham-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -5px);
+}
 
 /* HOME */
 
-.container{
-  display: block;
-      width: 100%;
-    height: 100vh;
-    background: var(--dark);
-}
 @media only screen and (min-width: 1200px) {
   .xl-container {
     display:flex;
@@ -105,8 +145,9 @@ h4 {
     border-radius: var(--radius);
   }
 
-.profile{
+.profile.flex-col{
   padding: 1.5em;
+  gap: .5em;
 }
   .profile-photo{
     width: 150px;
@@ -119,10 +160,30 @@ h4 {
   }
 .profile .icon-container a {
   width: 30%;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0 1rem;
 
 }
 
+
 }
+
+@media screen and (max-width: 1199px) {
+  .container{
+    display: block;
+        width: 100%;
+      height: 100vh;
+      background: var(--dark);
+  }
+
+}
+/* Home Page */
+.home .icon-container{
+  gap: 1em;
+}
+.home .icon-container .icon{
+  font-size: 5rem;
+}
+
+
 /* //////////// */

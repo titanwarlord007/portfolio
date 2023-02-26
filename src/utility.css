@@ -12,7 +12,6 @@
 }
 /* tab below */
 @media screen and (max-width: 1199px) {
-
 }
 /* /////////////////// */
 
@@ -22,52 +21,53 @@
   --gray: #24394e;
   --dark: #0c131b;
   --blue: #2ab7ff;
-  --radius:2.5em;
+  --radius: 2.5em;
 }
 /* display */
 @media screen and (max-width: 1199px) {
- /* tab below */
-  #hidden-tab{
+  /* tab below */
+  #hidden-tab {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   /* desktop */
-  #hidden-desktop{
+  #hidden-desktop {
     display: none;
   }
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-   #hidden-mobile{
+  #hidden-mobile {
     display: none;
   }
 }
 /* ///// */
 /* positioning */
-.center{
-    display: flex;
+.center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* //////// */
 
-
 /* text */
-.capitalize{
+.capitalize {
   text-transform: capitalize;
 }
-.text-center{
+.lowercase {
+  text-transform: lowercase;
+}
+.text-center {
   text-align: center;
 }
-.no-white-space{
+.no-white-space {
   white-space: nowrap;
 }
 /* /////// */
-
 
 /* flex and grid */
 .flex-imp {
@@ -118,9 +118,7 @@
 
 .css3 {
   color: #4165af;
-  
 }
-
 
 .react {
   color: #58c5ee;
@@ -129,10 +127,80 @@
 .js {
   color: #f7de1f;
 }
-
-
-
-
-
-
 /* ////// */
+/* ANIMATIONS */
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation-fill-mode: forwards;
+}
+
+.typed-1 {
+  animation: typing 3s steps(30, end) 0s 1 normal forwards,
+    blinking 1s 3s infinite;
+}
+
+.typed-2 {
+  animation: typing 3s steps(30, end) 3s 1 normal forwards,
+    blinking 1s 6s infinite;
+}
+
+@keyframes typing {
+from {
+    width: 0;
+
+  }
+ to {
+    width: 100%;
+
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: var(--blue);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home .icon-container.fade-in{
+  transform: translateY(50px);
+   animation: descendFadeIn 2s ease-in 3s forwards;
+}
+
+ @keyframes descendFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+
+   
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+   
+  }
+  
+}
+
+
+/* ////////// */
