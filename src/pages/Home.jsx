@@ -43,7 +43,7 @@ function Home() {
       </div>
 
       <div className="home container capitalize text-center center ">
-        <div>
+        <div className="content">
           <h1 className="typed typed-1">chisom okereke</h1>
           <h3 className="typed typed-2">frontend developer</h3>
           <br />

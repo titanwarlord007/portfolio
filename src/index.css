@@ -29,6 +29,7 @@ body {
   background-image: url(./images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 body {
   line-height: 1.6;
@@ -80,7 +81,7 @@ h4 {
 }
 @media only screen and (max-width: 767px) {
 h1{font-size: 4rem;}
-h2{font-size:3rem ;}
+h2{font-size:2rem ;}
 h3{font-size:1.8rem ;}
 h4{font-size:1.5rem ;}
 p{font-size: 1.2rem;}
@@ -90,20 +91,20 @@ p{font-size: 1.2rem;}
 .ham-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 15px;
+  top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: .4em;
   background-color: var(--blue);
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   padding:.5em;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-in-out;
 }
 .ham-btn .btn-line {
   width: 80%;
@@ -130,6 +131,7 @@ p{font-size: 1.2rem;}
 @media only screen and (min-width: 1200px) {
   .xl-container {
     display:flex;
+    justify-content: space-between;
     width: 80%;
     /* max-width: 1280px; */
     height: 80vh;
@@ -146,6 +148,7 @@ p{font-size: 1.2rem;}
   }
 
 .profile.flex-col{
+  /* width: 20%; */
   padding: 1.5em;
   gap: .5em;
 }
@@ -178,6 +181,9 @@ p{font-size: 1.2rem;}
 
 }
 /* Home Page */
+.home.content{
+  padding: 4em;
+}
 .home .icon-container{
   gap: 1em;
 }
