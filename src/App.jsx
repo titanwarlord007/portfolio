@@ -7,11 +7,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Shared />}>
+        <Route path="/portfolio" element={<Shared />}>
           <Route index element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
-      
   );
 }
