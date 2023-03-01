@@ -7,7 +7,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/portfolio" element={<Shared />}>
+        <Route path="/" element={<Shared />}>
           <Route index element={<Home />} />
         </Route>
       </Routes>
