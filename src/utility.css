@@ -17,12 +17,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap");
 
-:root {
+/* :root {
   --gray: #24394e;
   --dark: #0c131b;
   --blue: #2ab7ff;
   --radius: 2.5em;
-}
+} */
 /* display */
 @media screen and (max-width: 1199px) {
   /* tab below */
