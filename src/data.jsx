@@ -6,25 +6,25 @@ export const links = [
   {
     id: 1,
     url: "/",
-    text: "home",
+    text: "Home",
     icon: <FaHome/>,
   },
   {
     id: 2,
     url: "/about",
-    text: "about",
+    text: "About",
     icon: <FaUser />,
   },
   {
     id: 3,
     url: "/portfolio",
-    text: "portfolio",
+    text: "Portfolio",
     icon: <FaSuitcase />,
   },
   {
     id: 4,
     url: "/contact",
-    text: "contact",
+    text: "Contact",
     icon: <FaEnvelope />,
   },
   //   {
