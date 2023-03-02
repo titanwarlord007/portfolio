@@ -118,10 +118,11 @@ h4 {
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
+
 .ham-btn .btn-line {
   width: 80%;
   height: 3px;
-  /* margin: 0 0 5px 0; */
+  /* margin: 0px 0px 0px -4px; */
   background: #fff;
   transition: all 0.5s ease-out;
 }
@@ -129,13 +130,17 @@ h4 {
   transform: rotate(360deg);
 }
 .ham-btn.close .btn-line:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 4px);
+  transform: rotate(45deg) translate(8px, 5px);
+  margin: 0px 0px 0px -4px;
+
 }
 .ham-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 .ham-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -5px);
+  margin: 0px 0px 0px -4px;
+
 }
 
 .nav-links {
@@ -158,9 +163,11 @@ h4 {
   transition: all 1s ease-in-out;
   animation: show-nav 2s ease-in-out forwards;
 }
-.link{
-opacity: 0;
+.link.fade-in{
+/* opacity: 0; */
 animation: fadeIn 1s ease-in 2s forwards;
+
+/* animation-delay: 2s; */
 
 }
 @keyframes show-nav {
@@ -255,6 +262,25 @@ animation: fadeIn 1s ease-in 2s forwards;
     width: 100%;
     height: 100vh;
     background: var(--dark);
+    
+  }
+    .profile.flex-col {
+    /* width: 20%; */
+    padding: 1.5em;
+    gap: 0.5em;
+  }
+  .profile-photo {
+    width: 150px;
+  }
+  .profile-photo img {
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: var(--shadow);
+  }
+  .profile .icon-container a {
+    width: 30%;
+    font-size: 2rem;
+    margin: 0 1rem;
   }
 }
 /* Home Page */

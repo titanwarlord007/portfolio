@@ -1,5 +1,4 @@
 import React from "react";
-import profileImg from "../images/profile.jpg";
 import {
   FaHtml5,
   FaCss3Alt,
