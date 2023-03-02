@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <HamBtn />
-      <div className="ham-menu flex-col">
+      {/* <div className="ham-menu flex-col">
         <div className="profile-photo">
           <img src={profileImg} alt="profileimage" />
         </div>
@@ -37,7 +37,7 @@ export default function Navbar() {
           <FaEnvelope /> :{" "}
           <a href="mailto:chisomwebdev@outlook.com">chisomwebdev@outlook</a>
         </div>
-      </div>
+      </div> */}
       <ul id="hidden-tab" className="nav-links ">
         {links.map((link) => {
           const { id, url, text, icon } = link;
