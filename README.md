@@ -1,6 +1,4 @@
-/* ANIMATIONS */
-
-/* HTML */
+<a href='https://titanwarlord007.github.io/portfolio/'>https://titanwarlord007.github.io/portfolio/</a>
 /* <div class="fade-in"> 
   <h1>Hello World!</h1> 
 </div> */
