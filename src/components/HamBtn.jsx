@@ -6,7 +6,11 @@ export default function HamBtn() {
   const {isOpen,close}=useGlobalContext()
  
   return (
-    <div id='hidden-desktop' className={isOpen ? `ham-btn close` : `ham-btn fade-in`} onClick={close}>
+    <div
+      id="hidden-desktop"
+      className={isOpen ? `ham-btn fade-in close` : `ham-btn fade-in`}
+      onClick={close}
+    >
       <div className="btn-line"></div>
       <div className="btn-line"></div>
       <div className="btn-line"></div>

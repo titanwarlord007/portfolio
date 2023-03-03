@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import HamBtn from "./components/HamBtn";
 import { NavLink } from "react-router-dom";
 import { links } from "./data";
@@ -12,24 +12,35 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { useGlobalContext } from "./components/Context";
 
 export default function Navbar() {
-  // console.clear()
+    const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+  const[ height,setHeight]=useState(null)
+  const { isOpen } = useGlobalContext()
+  
+//     useEffect(() => {
+//       const linksHeight = linksRef.current.getBoundingClientRect().height;
+//       // if (showLinks) {
+//       //   linksContainerRef.current.style.height = `${linksHeight}px`;
+//       // } else {
+//       //   linksContainerRef.current.style.height = "0px";
+//       // }
+// setHeight(linksHeight)
+//       console.log(height)
+//     }, [height]);
+  
   return (
     <nav className="nav">
       <HamBtn />
-      {/* <div className="ham-menu flex-col">
+      <div id="hidden-desktop"  className={`ham-menu ${isOpen&&'show'}`}>
+        <div className="ham-profile">
         <div className="profile-photo">
           <img src={profileImg} alt="profileimage" />
         </div>
         <h2 style={{ fontSize: "3rem" }}>chisom okereke</h2>
         <h4>frontend developer</h4>
-        <ul className="ham-links">
-          {links.map((link) => {
-            const { id, text, url } = link;
-            return <li key={id}><NavLink to={url}>{ text}</NavLink></li>;
-          })}
-        </ul>
         <div className="tel-no">
           <FaPhoneAlt /> : +234 701 438 5856
         </div>
@@ -37,8 +48,19 @@ export default function Navbar() {
           <FaEnvelope /> :{" "}
           <a href="mailto:chisomwebdev@outlook.com">chisomwebdev@outlook</a>
         </div>
+
+        </div>
+        <ul className="ham-links">
+          {links.map((link) => {
+            const { id, text, url } = link;
+            return <li key={id}><NavLink  to={url}>{ text}</NavLink></li>;
+          })}
+        </ul>
+      </div>
+      {/* <div className="nav-link-container">
+
       </div> */}
-      <ul id="hidden-tab" className="nav-links ">
+      <ul id="hidden-tab" className="nav-links " ref={linksRef}>
         {links.map((link) => {
           const { id, url, text, icon } = link;
           return (
