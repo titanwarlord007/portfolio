@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/titanwarlord007/portfolio",
+  "homepage": "https://github.com/titanwarlord007/",
   "name": "portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
