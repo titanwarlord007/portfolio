@@ -1,7 +1,7 @@
 import React,{useState,useContext} from 'react'
 
 const AppContext = React.createContext()
-const AppProvider = ({children}) => {
+const AppProvider = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     function close() {
       return setIsOpen((prev) => !prev);

@@ -17,13 +17,27 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap");
 
-/* :root {
-  --gray: #24394e;
-  --dark: #0c131b;
-  --blue: #2ab7ff;
+:root {
+  --gray: #15648f;
+  --dark: #000b1b;
+  --accent: #00ffae;
   --radius: 2.5em;
-} */
+  --shadow: 0 0px 20px 2px var(--accent);
+}
+/* colors */
+.accent {
+  color: var(--accent);
+}
 /* display */
+@media only screen and (min-width: 1200px) {
+  .bg-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 @media screen and (max-width: 1199px) {
   /* tab below */
   #hidden-tab {
@@ -64,12 +78,34 @@
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: center;
+}
 .no-white-space {
   white-space: nowrap;
 }
 /* /////// */
 
 /* flex and grid */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content: center; */
+}
 .flex-imp {
   display: flex;
   align-items: center;
@@ -103,6 +139,12 @@
     align-items: center;
   }
 }
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
 /*/////////////  */
 
 /* ICONS */
@@ -127,6 +169,9 @@
 .js {
   color: #f7de1f;
 }
+.bootstrap {
+  color: #8712f7;
+}
 /* ////// */
 /* ANIMATIONS */
 .typed {
@@ -147,13 +192,11 @@
 }
 
 @keyframes typing {
-from {
+  from {
     width: 0;
-
   }
- to {
+  to {
     width: 100%;
-
   }
 }
 
@@ -182,25 +225,28 @@ from {
     opacity: 1;
   }
 }
-.home .icon-container.fade-in{
+.home .icon-container.fade-in {
   transform: translateY(50px);
-   animation: descendFadeIn 2s ease-in 3s forwards;
+  animation: descendFadeIn 2s ease-in 3s forwards;
 }
 
- @keyframes descendFadeIn {
+@keyframes descendFadeIn {
   from {
     opacity: 0;
     transform: translateY(50px);
-
-   
   }
   to {
     opacity: 1;
     transform: translateY(0);
-   
   }
-  
 }
 
-
 /* ////////// */
+
+.card{
+  border: 1px solid white;
+  border-radius: 7px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 2px 5px var(--accent);
+  padding: .5em;
+}
