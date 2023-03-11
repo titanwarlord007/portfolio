@@ -23,9 +23,9 @@ export default function App() {
     <Preloader />
   ) : (
     // <body className="bg-img">
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Shared />}>
+        <Route exact path="/portfolio/" element={<Shared />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
