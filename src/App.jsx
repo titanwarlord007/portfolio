@@ -25,7 +25,7 @@ export default function App() {
     // <body className="bg-img">
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Shared />}>
+        <Route exact path="/" element={<Shared />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
