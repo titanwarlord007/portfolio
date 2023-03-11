@@ -19,23 +19,20 @@ export default function App() {
 
   //   </style>
   // },[isLoading])
-  return (
-    isLoading ? (
-      <Preloader />
-    ) : (
-      // <body className="bg-img">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Shared />}>
-            <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+  return isLoading ? (
+    <Preloader />
+  ) : (
+    // <body className="bg-img">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<Shared />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     // </body>
-    )
-
   );
 }
