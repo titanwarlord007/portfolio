@@ -27,8 +27,8 @@ export const links = [
   },
   {
     id: 3,
-    url: "/portfolio",
-    text: "Portfolio",
+    url: "/projects",
+    text: "Projects",
     icon: <FaSuitcase />,
   },
   {
@@ -68,7 +68,7 @@ export const skills = [
   },
   {
     text: "Tailwind",
-    icon: <SiTailwindcss className="icon react" />,
+    icon: <SiTailwindcss className="icon tailwind" />,
   },
 ];
 
@@ -76,13 +76,16 @@ export const projects = [
   {
     url: "https://titanwarlord007.github.io/zuri-registration-form/",
     text: "Zuri Registration Form",
+    image: "../src/assets/images/zuri-registration-form_img.png",
   },
   {
     url: "https://titanwarlord007.github.io/Make-A-Wish-copy/",
     text: "Make A Wish copy website",
+    image: "../src/assets/images/Make-A-Wish-copy_img.png",
   },
   {
     url: "https://titanwarlord007.github.io/bootstrap-website/",
     text: "Bootstrap Website",
+    image: "../src/assets/images/bootstrap-website_img.png",
   },
 ];

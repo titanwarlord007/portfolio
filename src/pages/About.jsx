@@ -3,11 +3,9 @@ import { skills } from "../data";
 import { TbCertificate } from "react-icons/tb";
 import { FaFreeCodeCamp } from "react-icons/fa";
 import { SiUdacity } from "react-icons/si";
-import { useGlobalContext } from "../components/Context";
 function About() {
-  const {close,isOpen }= useGlobalContext()
   return (
-    <div className="about container" onClick={isOpen?close:undefined}>
+    <div className="about container" >
       <section className="about-text">
         <h2>
           About <span className="accent">Me</span>

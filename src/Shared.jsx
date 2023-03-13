@@ -12,8 +12,10 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoLinkedin } from "react-icons/io5";
+import { useGlobalContext } from "../src/components/Context";
 
 export default function Shared() {
+  const { close, isOpen } = useGlobalContext();
   return (
     <div className="xl-container">
       <div
@@ -45,8 +47,11 @@ export default function Shared() {
           <a href="mailto:chisomwebdev@outlook.com">chisomwebdev@outlook</a>
         </div>
       </div>
+
       <Navbar />
-      <Outlet />
+
+      <Outlet  />
+
     </div>
   );
 }

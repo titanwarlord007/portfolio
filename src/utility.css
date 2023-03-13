@@ -119,6 +119,7 @@
 }
 .grid {
   display: grid;
+    gap: 20px;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
@@ -162,7 +163,7 @@
   color: #4165af;
 }
 
-.react {
+.react,.tailwind {
   color: #58c5ee;
 }
 

@@ -11,8 +11,8 @@ import {
 import { IoLogoJavascript, IoLogoLinkedin } from "react-icons/io5";
 function Home() {
   return (
-    <div className="home container capitalize text-center center ">
-<div className="zigzag"></div>
+    <div className=" container home capitalize text-center center ">
+      <div className="zigzag"></div>
       <div className="content">
         <h1 className="typed typed-1">chisom okereke</h1>
         <h3 className="typed typed-2">frontend developer</h3>
