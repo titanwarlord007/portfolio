@@ -25,7 +25,7 @@ export default function App() {
     // <body className="bg-img">
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Shared />}>
+        <Route path="/" element={<Shared />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
