@@ -75,17 +75,23 @@ export const skills = [
 export const projects = [
   {
     url: "https://titanwarlord007.github.io/zuri-registration-form/",
-    text: "Zuri Registration Form",
+    text: " Registration Form",
     image: "../src/assets/images/zuri-registration-form_img.png",
+    description: "A mock registration form, a challenge give by Zuri",
+    tools: ["HTML", "CSS", "Javascript"],
   },
   {
     url: "https://titanwarlord007.github.io/Make-A-Wish-copy/",
-    text: "Make A Wish copy website",
+    text: "Make A Wish website",
     image: "../src/assets/images/Make-A-Wish-copy_img.png",
+    description: "A copy of the Make A Wish foundation landing page",
+    tools: ["HTML", "CSS", "Javascript"],
   },
   {
     url: "https://titanwarlord007.github.io/bootstrap-website/",
     text: "Bootstrap Website",
     image: "../src/assets/images/bootstrap-website_img.png",
+    description: "A mock bootstrap landing page",
+    tools: ["Bootstrap"],
   },
 ];

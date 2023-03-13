@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Shared from "./Shared";
 import { links } from "./data";
@@ -28,7 +28,7 @@ export default function App() {
         <Route exact path="/" element={<Shared />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Portfolio />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

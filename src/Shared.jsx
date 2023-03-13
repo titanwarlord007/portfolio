@@ -48,7 +48,7 @@ export default function Shared() {
         </div>
       </div>
 
-      <Navbar />
+      <Navbar  />
 
       <Outlet  />
 

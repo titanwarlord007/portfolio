@@ -103,8 +103,8 @@
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  gap: 10px;
 }
 .flex-imp {
   display: flex;
